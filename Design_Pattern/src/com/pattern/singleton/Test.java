@@ -11,6 +11,14 @@ public class Test {
 		System.out.println(emp1.hashCode());
 		
 		System.out.println(emp2.hashCode());
+	
 		
 	}
+	
+/*	 We can break singleton design pattern by using
+*	1) Multithreading
+*   2) Serialization
+*   3) Reflection 
+*   4) Cloning
+*/	
 }
