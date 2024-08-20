@@ -1,6 +1,8 @@
 package com.pattern.singleton;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee  implements Serializable{
 
 	static Employee employee= null;
 	
@@ -17,6 +19,9 @@ public class Employee {
 	}
 	
 	
-
+  Object readResolve(){
+	return employee;
+	  
+  }
 	
 }
